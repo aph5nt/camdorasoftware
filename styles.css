@@ -186,19 +186,6 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
 
 /* About */
 .about { max-width: 70ch; }
-.facts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem 2rem;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--bg-alt);
-}
-.facts div { display: flex; flex-direction: column; }
-.facts dt { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); }
-.facts dd { margin: 0; font-weight: 600; }
 .small { font-size: 0.9rem; color: var(--ink-soft); }
 
 /* Contact */
