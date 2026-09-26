@@ -9,7 +9,8 @@ Live: https://camdora.software
 Static HTML and CSS. No build step.
 
 - `index.html` - the page
-- `styles.css` - styling, light and dark
+- `styles.css` - styling, light theme
+- `site.js` - nav state, scroll reveal, hero network animation
 - `CNAME` - custom domain for GitHub Pages
 
 ## Hosting

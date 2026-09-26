@@ -3,9 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Camdora Software Ltd</title>
-  <meta name="description" content="Camdora Software Ltd is a UK software company founded in 2013. Software development, blockchain integration, programming, architecture and testing.">
+  <title>Camdora Software — Engineering for systems that cannot afford to be wrong</title>
+  <meta name="description" content="Camdora Software is a UK engineering company founded in 2013. Software development, blockchain integration, distributed architecture and testing for finance, blockchain and data-heavy businesses.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://camdora.software/">
+  <meta property="og:title" content="Camdora Software">
+  <meta property="og:description" content="Engineering for systems that cannot afford to be wrong. UK software company since 2013.">
+  <meta property="og:url" content="https://camdora.software/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -27,156 +35,277 @@
 </head>
 <body>
 
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="Camdora Software home">
-    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-      <rect x="2" y="2" width="28" height="28" rx="7" fill="currentColor"/>
-      <path d="M21.5 11.2a6 6 0 1 0 0 9.6" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-    </svg>
-    <span>Camdora Software</span>
-  </a>
-  <nav class="site-nav" aria-label="Main">
-    <a href="#services">Services</a>
-    <a href="#specialise">Specialisms</a>
-    <a href="#about">About</a>
-    <a href="#contact" class="nav-cta">Contact</a>
-  </nav>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="Camdora Software, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="currentColor"/><path d="M21.5 11.2a6 6 0 1 0 0 9.6" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+      <span>Camdora<em>Software</em></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#depth">Specialisms</a>
+      <a href="#engage">Working with us</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn btn-ink nav-cta" href="#contact">Talk to us</a>
+  </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-  <section class="hero">
-    <p class="eyebrow">UK software company, established 2013</p>
-    <h1>Software built to last.<br>Systems built to scale.</h1>
-    <p class="lead">
-      Camdora Software designs, builds and tests software for businesses.
-      From clean application code to blockchain integration and
-      system architecture, we deliver work that stays reliable in production.
+<!-- ====================== HERO ====================== -->
+<section class="hero" id="top">
+  <canvas id="net" class="hero-net" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <p class="kicker"><span class="dot"></span>UK software engineering &middot; est. 2013</p>
+    <h1>Engineering for systems that <em>cannot afford</em> to be wrong.</h1>
+    <p class="hero-lead">
+      We design, build and prove software for finance, blockchain and data-heavy businesses.
+      Architecture that holds. Code that ships. Tests that tell the truth.
     </p>
-    <div class="hero-actions">
-      <a class="button primary" href="mailto:contact@camdora.software">Start a conversation</a>
-      <a class="button ghost" href="#services">See what we do</a>
+    <div class="hero-cta">
+      <a class="btn btn-ink" href="#contact">Start a project</a>
+      <a class="btn btn-line" href="#services">What we do <span aria-hidden="true">&darr;</span></a>
     </div>
-    <dl class="stats" aria-label="Key facts">
-      <div><dt>Founded</dt><dd>2013</dd></div>
-      <div><dt>Based in</dt><dd>United Kingdom</dd></div>
-      <div><dt>Registered</dt><dd>Companies House</dd></div>
-    </dl>
-  </section>
-
-  <section id="services" class="section">
-    <h2>Services</h2>
-    <p class="section-intro">Five areas of work. One team that sees each project through from first design to final test.</p>
-    <div class="grid">
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M8 6 3 12l5 6M16 6l5 6-5 6M14 4l-4 16"/></svg>
-        </div>
-        <h3>Software development</h3>
-        <p>Web applications, back-end services, APIs and internal tools. Built with modern languages and clear, maintainable code.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4v7.5M6.5 10v4h7.5"/></svg>
-        </div>
-        <h3>Blockchain integration</h3>
-        <p>Connecting products to public and private chains. Wallets, smart contracts, indexing, on-chain data pipelines and analytics.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10M2 17h20v2H2z"/><path d="M8 11h8M8 14h5"/></svg>
-        </div>
-        <h3>Programming</h3>
-        <p>Hands-on engineering across the stack. Go, Rust, Python, TypeScript and SQL, chosen to fit the problem rather than the fashion.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        </div>
-        <h3>Architecture</h3>
-        <p>System design that matches the business: data models, service boundaries, scaling plans and the trade-offs written down.</p>
-      </article>
-
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.5 9A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7.5 15h9"/></svg>
-        </div>
-        <h3>Testing</h3>
-        <p>Unit, integration and end-to-end testing, plus performance and load checks. Evidence that the system works before it ships.</p>
-      </article>
-
-      <article class="card highlight">
-        <h3>Not sure where to start?</h3>
-        <p>Send a short note about the problem. We reply with a plain-language view of the options and what each one costs.</p>
-        <a class="button primary" href="mailto:contact@camdora.software">Email us</a>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="specialise" class="section alt">
-    <h2>What we specialise in</h2>
-    <p class="section-intro">The work we are asked back for. Deep, technical and delivered end to end.</p>
-    <ul class="focus">
-      <li>
-        <h3>Blockchain and on-chain data</h3>
-        <p>Indexing, decoding and analysing chain activity at scale. Wallet, token and smart-contract integration for products that need reliable on-chain data.</p>
-      </li>
-      <li>
-        <h3>High-throughput data pipelines</h3>
-        <p>Ingest, store and query millions of records a day. Column stores, graph databases and the writers that keep them current.</p>
-      </li>
-      <li>
-        <h3>Distributed system architecture</h3>
-        <p>Service boundaries, data models and scaling plans for systems that must run for years. Written down, drawn out and agreed before build.</p>
-      </li>
-      <li>
-        <h3>Quality and testing</h3>
-        <p>Automated test suites, integration environments and performance evidence. Proof that a system works, not a promise.</p>
-      </li>
+    <ul class="hero-proof" aria-label="At a glance">
+      <li><strong>12+</strong><span>years shipping</span></li>
+      <li><strong>End to end</strong><span>architecture to production</span></li>
+      <li><strong>Senior only</strong><span>the people who plan it build it</span></li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="about" class="section">
-    <h2>About Camdora Software</h2>
-    <div class="about">
-      <p>
-        Camdora Software Ltd is a UK software company, founded in 2013.
-        Since then we have delivered software
-        development, architecture and testing for clients across finance,
-        blockchain and data-heavy businesses.
-      </p>
-      <p>
-        We are a small, senior team. Every engagement is led by an engineer who
-        has designed and run production systems, and who writes the code as well
-        as the plan.
-      </p>
+<!-- ====================== STACK STRIP ====================== -->
+<div class="strip" aria-label="Technologies we work in">
+  <div class="strip-track">
+    <span>Go</span><span>Rust</span><span>Python</span><span>TypeScript</span><span>SQL</span>
+    <span>Kubernetes</span><span>StarRocks</span><span>Neo4j</span><span>PostgreSQL</span><span>ClickHouse</span>
+    <span>EVM</span><span>Solidity</span><span>Substrate</span><span>Bittensor</span><span>Kafka</span>
+    <span>Go</span><span>Rust</span><span>Python</span><span>TypeScript</span><span>SQL</span>
+    <span>Kubernetes</span><span>StarRocks</span><span>Neo4j</span><span>PostgreSQL</span><span>ClickHouse</span>
+    <span>EVM</span><span>Solidity</span><span>Substrate</span><span>Bittensor</span><span>Kafka</span>
+  </div>
+</div>
+
+<!-- ====================== SERVICES ====================== -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="label">Services</p>
+      <h2>Five things we do, <em>properly.</em></h2>
+      <p class="sub">One team carries the work from first whiteboard to running system. No hand-offs, no gaps between the plan and the code.</p>
     </div>
-  </section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p class="lead">Tell us what you are building. We reply within two working days.</p>
-    <a class="contact-email" href="mailto:contact@camdora.software">contact@camdora.software</a>
+    <ol class="rows">
+      <li class="row reveal">
+        <span class="row-num">01</span>
+        <div class="row-body">
+          <h3>Software development</h3>
+          <p>Web applications, back-end services, APIs and internal tools. Built in modern languages with code a new engineer can read on day one.</p>
+        </div>
+        <ul class="row-tags"><li>APIs</li><li>Services</li><li>Web apps</li><li>Tooling</li></ul>
+      </li>
+      <li class="row reveal">
+        <span class="row-num">02</span>
+        <div class="row-body">
+          <h3>Blockchain integration</h3>
+          <p>Wallets, smart contracts, indexing and on-chain analytics. We connect products to public and private chains and make the data usable.</p>
+        </div>
+        <ul class="row-tags"><li>EVM</li><li>Indexing</li><li>Smart contracts</li><li>Graph analytics</li></ul>
+      </li>
+      <li class="row reveal">
+        <span class="row-num">03</span>
+        <div class="row-body">
+          <h3>Programming</h3>
+          <p>Hands-on engineering across the stack. Go, Rust, Python, TypeScript and SQL, picked to fit the problem rather than the fashion.</p>
+        </div>
+        <ul class="row-tags"><li>Go</li><li>Rust</li><li>Python</li><li>TypeScript</li></ul>
+      </li>
+      <li class="row reveal">
+        <span class="row-num">04</span>
+        <div class="row-body">
+          <h3>Architecture</h3>
+          <p>Service boundaries, data models, scaling plans and the trade-offs written down. Systems designed to run for years, not demos.</p>
+        </div>
+        <ul class="row-tags"><li>Distributed systems</li><li>Data modelling</li><li>Reviews</li></ul>
+      </li>
+      <li class="row reveal">
+        <span class="row-num">05</span>
+        <div class="row-body">
+          <h3>Testing</h3>
+          <p>Unit, integration and end-to-end suites, plus load and performance runs. Evidence that the system works before it ships.</p>
+        </div>
+        <ul class="row-tags"><li>Automation</li><li>Integration</li><li>Performance</li><li>Proof</li></ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ====================== SPECIALISMS ====================== -->
+<section class="section section-ink" id="depth">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="label">Where we go deep</p>
+      <h2>The work we get <em>asked back</em> for.</h2>
+    </div>
+
+    <div class="deep-grid">
+      <article class="deep reveal">
+        <div class="deep-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M6.5 7.5l4 9M17.5 7.5l-4 9"/></svg>
+        </div>
+        <h3>On-chain data at scale</h3>
+        <p>Indexers that keep pace with a live chain. Decoders for transfers, swaps, bridges and smart-account activity. Graph models that let an analyst trace funds across millions of addresses.</p>
+        <ul class="deep-points">
+          <li>Full-history EVM indexing, genesis to tip</li>
+          <li>Money-flow graphs for AML and risk screening</li>
+          <li>DEX, lending and bridge decoding</li>
+        </ul>
+      </article>
+
+      <article class="deep reveal">
+        <div class="deep-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><path d="M8 3v18" opacity=".4"/></svg>
+        </div>
+        <h3>High-throughput data pipelines</h3>
+        <p>Ingest, store and query hundreds of millions of rows a day. Column stores, graph databases and the writers that keep them current without falling behind.</p>
+        <ul class="deep-points">
+          <li>StarRocks, ClickHouse, Neo4j, PostgreSQL</li>
+          <li>Batch and streaming writers tuned to the store</li>
+          <li>Backfills that finish, and can be re-run</li>
+        </ul>
+      </article>
+
+      <article class="deep reveal">
+        <div class="deep-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg>
+        </div>
+        <h3>Distributed system architecture</h3>
+        <p>Kubernetes-native services with clear boundaries, honest failure modes and a scaling plan you can read. Drawn out and agreed before a line of code.</p>
+        <ul class="deep-points">
+          <li>Service and data-ownership boundaries</li>
+          <li>Blue-green and A/B serving lanes</li>
+          <li>Observability built in, not bolted on</li>
+        </ul>
+      </article>
+
+      <article class="deep reveal">
+        <div class="deep-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>Quality and testing</h3>
+        <p>Automated suites from the first commit, disposable integration environments, and performance numbers you can put in front of a board.</p>
+        <ul class="deep-points">
+          <li>Unit, integration and end-to-end coverage</li>
+          <li>Throughput and load evidence per release</li>
+          <li>Continuous integration gates that mean something</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== PROCESS ====================== -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="label">How an engagement runs</p>
+      <h2>Clear steps. <em>No surprises.</em></h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal">
+        <span class="step-n">1</span>
+        <h3>Understand</h3>
+        <p>Goal, constraints and the numbers that matter. Short calls, written notes, plain language.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-n">2</span>
+        <h3>Design</h3>
+        <p>Architecture and data flow drawn out and agreed. Risks named early, with a cost on each.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-n">3</span>
+        <h3>Build and prove</h3>
+        <p>Small reviewed changes. Tests from day one. Working software you can see every week.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-n">4</span>
+        <h3>Run</h3>
+        <p>Deployment, monitoring and hand-over. We stay on until it is stable in production.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ====================== ENGAGEMENT MODELS ====================== -->
+<section class="section section-tint" id="engage">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="label">Working with us</p>
+      <h2>Three ways to <em>bring us in.</em></h2>
+    </div>
+    <div class="models">
+      <article class="model reveal">
+        <h3>Project delivery</h3>
+        <p>A defined outcome, a fixed team, a date. We own the design, the build and the proof, and hand over a system your team can run.</p>
+        <p class="model-fit">Best for: a new product, a platform rebuild, a chain integration.</p>
+      </article>
+      <article class="model reveal">
+        <h3>Embedded engineers</h3>
+        <p>Senior engineers inside your team for a season. Same tools, same stand-ups, same standards. Capacity and experience without a hiring cycle.</p>
+        <p class="model-fit">Best for: a roadmap that outgrew the team, a hard subsystem nobody owns.</p>
+      </article>
+      <article class="model reveal">
+        <h3>Architecture and review</h3>
+        <p>A second pair of experienced eyes on a design, a codebase or a scaling problem. A written report with options, costs and a recommendation.</p>
+        <p class="model-fit">Best for: a decision that is expensive to get wrong.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== ABOUT ====================== -->
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about-text reveal">
+      <p class="label">About</p>
+      <h2>Small, senior, <em>and here since 2013.</em></h2>
+      <p>Camdora Software is a UK engineering company. For over a decade we have built and run software for finance, blockchain and data-heavy businesses, from first design to production.</p>
+      <p>Every engagement is led by an engineer who has designed and operated production systems, and who writes the code as well as the plan. You talk to the people doing the work.</p>
+    </div>
+    <ul class="about-values reveal">
+      <li><strong>Plain language.</strong> Decisions are explained so anyone in the room can make them.</li>
+      <li><strong>Numbers, not adjectives.</strong> Throughput, cost and risk stated with figures and sources.</li>
+      <li><strong>Written down.</strong> Architecture, trade-offs and runbooks live in the repository, not in someone's head.</li>
+      <li><strong>Proof before promise.</strong> A feature is done when the test and the dashboard say so.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ====================== CTA ====================== -->
+<section class="cta" id="contact">
+  <div class="wrap cta-inner reveal">
+    <p class="label label-light">Contact</p>
+    <h2>Tell us what you are <em>building.</em></h2>
+    <p class="cta-sub">Send a short note about the problem. You get a plain-language reply with options and what each one costs, within two working days.</p>
+    <a class="cta-mail" href="mailto:contact@camdora.software">contact@camdora.software</a>
     <address>
-      Camdora Software Ltd<br>
-      Unit 10 Enterprise Court, Farfield Park<br>
-      Rotherham, S63 5DB<br>
-      United Kingdom
+      Camdora Software Ltd &middot; Unit 10 Enterprise Court, Farfield Park, Rotherham, S63 5DB, United Kingdom
     </address>
-  </section>
+  </div>
+</section>
 
 </main>
 
-<footer class="site-footer">
-  <p>&copy; <span id="year">2026</span> Camdora Software Ltd. Registered in England and Wales, company number 08693594.</p>
-  <p>Registered office: Unit 10 Enterprise Court, Farfield Park, Rotherham, S63 5DB.</p>
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p>&copy; <span id="year">2026</span> Camdora Software Ltd. Registered in England and Wales, company number 08693594. Registered office: Unit 10 Enterprise Court, Farfield Park, Rotherham, S63 5DB.</p>
+    <a href="#top">Back to top &uarr;</a>
+  </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="site.js" defer></script>
 </body>
 </html>
